@@ -1,0 +1,41 @@
+:root {
+    ---primary-grey: #263B3C;
+    ---primary-text: #00000099
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Castoro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p,
+span,
+li,
+a {
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.books-btn {
+    background-color: var(---primary-grey);
+    padding: 18px 40px;
+    border-radius: 9999px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFFCC;
+}
