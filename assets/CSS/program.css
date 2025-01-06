@@ -1,5 +1,6 @@
 header {
-/* top bar css start  */
+
+    /* top bar css start  */
     .top-bar-section {
         background-color: var(---primary-grey);
         padding: 18px 0;
@@ -68,15 +69,15 @@ header {
 }
 
 /* main section css start  */
-main .about-container-section .banner-img {
-    background-image: url("../media/about_images/backgorund-img/IMG_4835\ 1.png");
+main .Programs-container-section .banner-img {
+    background-image: url("../media/program-image/banner-img/bg\ img\ \(1\).png");
     height: 500px;
     width: 100%;
     background-size: cover;
     background-position: center;
 }
 
-main .about-container-section .banner-img h2 {
+main .Programs-container-section .banner-img h2 {
     color: #263B3C;
     font-size: 4rem;
     font-weight: 400;
@@ -84,111 +85,54 @@ main .about-container-section .banner-img h2 {
     letter-spacing: 0.32px;
 }
 
-main .about-container-section .banner-img .about-text-content {
+main .Programs-container-section .banner-img .Programs-text-content {
     padding: 172px 0px;
     flex-direction: column;
     align-items: flex-start;
 }
 
-main .about-container-section .banner-img p {
+main .Programs-container-section .banner-img p {
     color: #263B3C;
     font-size: 16.25px;
     font-weight: 400;
     line-height: 160%;
 }
 
-/* card_text-section css start  */
-main .cards-section .card-text-content {
-    margin-top: 100px;
-    margin-bottom: 80px;
-}
-
-main .cards-section .card-text-content h2 {
-    color: #263B3C;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 400;
-    line-height: 120%;
-}
-
-
-main .cards-section .card-text-content p {
-    color: rgba(0, 0, 0, 0.60);
-    text-align: center;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 160%;
-}
-
-main .cards-section .card-container .card-content img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-main .cards-section .card-container .card-content .card-text h2 {
-    color: #263B3C;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 160%;
-}
-
-main .cards-section .card-container .card-content .card-text p {
-    color: rgba(0, 0, 0, 0.60);
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 160%;
-}
-
-/* single card container  */
-/* if use main it's doesn't work  */
-.cards-section .single-card-container {
+/* cards container section  */
+main .cards-container-section {
     margin: 100px 0px;
 }
-
-.cards-section .single-card-container h2 {
-    color: #263B3C;
-    text-align: center;
-    font-size: 38.998px;
-    font-weight: 400;
-    line-height: 120%;
+main .cards-container-section .gap-add{
+    display: flex;
+    gap: 20px;
 }
-.cards-section .single-card-container .single-card-content{
+main .cards-container-section .card {
+    border: none;
     background-color: #E5EEEE;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 10px;
 }
-.cards-section .single-card-container .single-card-content img{
+
+main .cards-container-section .card img {
     width: 100%;
     height: auto;
-}
-.cards-section .single-card-container .single-card-content .birth-text {
-    color: rgba(0, 0, 0, 0.70);
-    font-size: 14.435px;
-    font-weight: 400;
-    line-height: 160%;
+    border-radius: 10px;
 }
 
-.cards-section .single-card-container .single-card-content .birth-header {
+main .cards-container-section .card .cards-text h2 {
     color: #000;
-    font-size: 25.662px;
+    font-size: 36px;
     font-weight: 400;
     line-height: 110%;
 }
 
-.cards-section .single-card-container .single-card-content .miracles-text {
+main .cards-container-section .card .cards-text p {
     color: rgba(0, 0, 0, 0.60);
-    font-size: 14.435px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 160%;
 }
 
-.cards-section .single-card-container .single-card-content .date-ob {
-    color: rgba(0, 0, 0, 0.70);
-    font-size: 14.435px;
-    font-weight: 400;
-    line-height: 160%;
-}
+/* footer section css start  */
 footer {
     .marque-section {
         img {
@@ -254,6 +198,7 @@ footer {
         }
     }
 }
+
 @media only screen and (max-width: 991px) {
 
     /* header section css  */
@@ -276,36 +221,23 @@ footer {
 
     }
 
-    /* main section css start   */
-    main .about-container-section .banner-img {
-        height: 350px;
+    /* main container section css  */
+    main .Programs-container-section .banner-img {
+        height: 300px;
     }
 
-    main .about-container-section .banner-img .about-text-content {
+    main .Programs-container-section .banner-img .Programs-text-content {
         padding: 122px 20px;
     }
-
-    /* card text section css start  */
-    main .cards-section .card-text-content h2 {
-        font-size: 2rem;
+    /* cards container section  */
+    main .cards-container-section .gap-add{
+        flex-direction: column;
     }
 
 
-    main .cards-section .card-text-content p {
-        font-size: 1rem;
-    }
 
-    main .cards-section .card-container .card-content .card-text h2 {
-        font-size: 24px;
-        margin-top: 1rem;
-    }
-
-    main .cards-section .card-container .card-content .card-text p {
-        font-size: 1rem;
-    }
-
-     /* footer section css start  */
-     footer {
+    /* footer section css start  */
+    footer {
         .marque-section {
             img {
                 height: 170px;
@@ -317,4 +249,5 @@ footer {
             padding: 40px 10px;
         }
     }
+
 }

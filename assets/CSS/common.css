@@ -2,7 +2,11 @@
     ---primary-grey: #263B3C;
     ---primary-text: #00000099
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 h1,
 h2,
 h3,

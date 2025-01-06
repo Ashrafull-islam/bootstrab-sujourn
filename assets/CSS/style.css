@@ -387,16 +387,18 @@ footer {
         /* navbar css  */
         .navbar-section {
             .content {
-                .offcanvas-body {
-                    ul {
-                        li {
-                            margin-bottom: 20px;
-                            text-align: center !important;
+                ul {
+                    li {
+                        a {
+                                margin-bottom: 20px;
+                                text-align: center;
+
                         }
                     }
                 }
             }
         }
+
     }
 
 
@@ -512,7 +514,7 @@ footer {
             display: none;
         }
     }
-
+    /* footer section css start  */
     footer {
         .marque-section {
             img {

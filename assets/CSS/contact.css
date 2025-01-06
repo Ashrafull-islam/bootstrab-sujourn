@@ -1,5 +1,6 @@
 header {
-/* top bar css start  */
+
+    /* top bar css start  */
     .top-bar-section {
         background-color: var(---primary-grey);
         padding: 18px 0;
@@ -68,15 +69,15 @@ header {
 }
 
 /* main section css start  */
-main .about-container-section .banner-img {
-    background-image: url("../media/about_images/backgorund-img/IMG_4835\ 1.png");
+main .Contact-container-section .banner-img {
+    background-image: url('../media/contact-images/bg-banner/contact.png');
     height: 500px;
     width: 100%;
     background-size: cover;
     background-position: center;
 }
 
-main .about-container-section .banner-img h2 {
+main .Contact-container-section .banner-img h2 {
     color: #263B3C;
     font-size: 4rem;
     font-weight: 400;
@@ -84,111 +85,80 @@ main .about-container-section .banner-img h2 {
     letter-spacing: 0.32px;
 }
 
-main .about-container-section .banner-img .about-text-content {
+main .Contact-container-section .banner-img .Contact-text-content {
     padding: 172px 0px;
     flex-direction: column;
     align-items: flex-start;
 }
 
-main .about-container-section .banner-img p {
+main .Contact-container-section .banner-img p {
     color: #263B3C;
     font-size: 16.25px;
     font-weight: 400;
     line-height: 160%;
 }
 
-/* card_text-section css start  */
-main .cards-section .card-text-content {
-    margin-top: 100px;
-    margin-bottom: 80px;
+/* contact section css start  */
+main .contact-section {
+    margin: 100px 0px;
 }
 
-main .cards-section .card-text-content h2 {
-    color: #263B3C;
-    text-align: center;
+main .contact-section .form-conteiner {
+    background-color: #E5EEEE;
+    border-radius: 20px;
+}
+
+main .contact-section h2 {
+    color: #000;
     font-size: 3rem;
     font-weight: 400;
     line-height: 120%;
 }
 
-
-main .cards-section .card-text-content p {
-    color: rgba(0, 0, 0, 0.60);
-    text-align: center;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 160%;
-}
-
-main .cards-section .card-container .card-content img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-main .cards-section .card-container .card-content .card-text h2 {
-    color: #263B3C;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 160%;
-}
-
-main .cards-section .card-container .card-content .card-text p {
+main .contact-section p {
     color: rgba(0, 0, 0, 0.60);
     font-size: 20px;
     font-weight: 300;
     line-height: 160%;
 }
 
-/* single card container  */
-/* if use main it's doesn't work  */
-.cards-section .single-card-container {
-    margin: 100px 0px;
-}
-
-.cards-section .single-card-container h2 {
-    color: #263B3C;
-    text-align: center;
-    font-size: 38.998px;
-    font-weight: 400;
-    line-height: 120%;
-}
-.cards-section .single-card-container .single-card-content{
-    background-color: #E5EEEE;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-.cards-section .single-card-container .single-card-content img{
-    width: 100%;
+/* form css start  */
+.form-control {
+    padding: 12px 16px;
+    border: 0.502px solid #000;
+    border-radius: 8px;
     height: auto;
 }
-.cards-section .single-card-container .single-card-content .birth-text {
-    color: rgba(0, 0, 0, 0.70);
-    font-size: 14.435px;
-    font-weight: 400;
-    line-height: 160%;
-}
 
-.cards-section .single-card-container .single-card-content .birth-header {
-    color: #000;
-    font-size: 25.662px;
-    font-weight: 400;
-    line-height: 110%;
-}
-
-.cards-section .single-card-container .single-card-content .miracles-text {
+.form-control::placeholder {
     color: rgba(0, 0, 0, 0.60);
-    font-size: 14.435px;
-    font-weight: 300;
+    font-size: 10.045px;
+    font-weight: 500;
     line-height: 160%;
 }
 
-.cards-section .single-card-container .single-card-content .date-ob {
-    color: rgba(0, 0, 0, 0.70);
-    font-size: 14.435px;
-    font-weight: 400;
-    line-height: 160%;
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
 }
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #152e2a;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+}
+
+
+/* footer section css start  */
 footer {
     .marque-section {
         img {
@@ -254,6 +224,7 @@ footer {
         }
     }
 }
+
 @media only screen and (max-width: 991px) {
 
     /* header section css  */
@@ -277,35 +248,17 @@ footer {
     }
 
     /* main section css start   */
-    main .about-container-section .banner-img {
+    main .Contact-container-section .banner-img {
         height: 350px;
     }
 
-    main .about-container-section .banner-img .about-text-content {
+    main .Contact-container-section .banner-img .Contact-text-content {
         padding: 122px 20px;
     }
 
-    /* card text section css start  */
-    main .cards-section .card-text-content h2 {
-        font-size: 2rem;
-    }
 
-
-    main .cards-section .card-text-content p {
-        font-size: 1rem;
-    }
-
-    main .cards-section .card-container .card-content .card-text h2 {
-        font-size: 24px;
-        margin-top: 1rem;
-    }
-
-    main .cards-section .card-container .card-content .card-text p {
-        font-size: 1rem;
-    }
-
-     /* footer section css start  */
-     footer {
+    /* footer section css start  */
+    footer {
         .marque-section {
             img {
                 height: 170px;
