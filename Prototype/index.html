@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="steps-container">
+            <div class="sidebar">
+                <ul class="progress-steps">
+                    <li class="progress-step active">Select Date</li>
+                    <li class="progress-step">Mother's Information</li>
+                    <li class="progress-step">Support Room Details</li>
+                </ul>
+            </div>
+            <div class="form-content">
+                <!-- Step 1: Calendar -->
+                <div class="step-form active" id="step1">
+                    <h2 class="form-title">Select Your Preferred Date</h2>
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <button class="btn-prev">←</button>
+                            <h3>August 2024</h3>
+                            <button class="btn-next">→</button>
+                        </div>
+                        <div class="calendar-grid">
+                            <!-- Calendar days will be inserted by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="form-buttons">
+                        <button class="btn btn-next" onclick="nextStep()">Continue</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Mother's Information -->
+                <div class="step-form" id="step2">
+                    <h2 class="form-title">Mother's Information</h2>
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Address</label>
+                        <input type="text" class="form-input" required>
+                    </div>
+                    <div class="form-buttons">
+                        <button class="btn btn-prev" onclick="prevStep()">Previous</button>
+                        <button class="btn btn-next" onclick="nextStep()">Continue</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Support Room Information -->
+                <div class="step-form" id="step3">
+                    <h2 class="form-title">Support Room Information</h2>
+                    <div class="form-group">
+                        <label class="form-label">Room Type</label>
+                        <select class="form-input">
+                            <option>Private Room</option>
+                            <option>Shared Room</option>
+                            <option>Family Suite</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Length of Stay</label>
+                        <input type="number" class="form-input" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Special Requirements</label>
+                        <textarea class="form-input" rows="4"></textarea>
+                    </div>
+                    <div class="form-buttons">
+                        <button class="btn btn-prev" onclick="prevStep()">Previous</button>
+                        <button class="btn btn-next" onclick="submitForm()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

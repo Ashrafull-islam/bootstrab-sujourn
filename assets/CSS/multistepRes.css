@@ -1,0 +1,88 @@
+@media all and (max-width: 991px) {
+    .left-side {
+        border-radius: 5px;
+    }
+
+    .list-container {
+        display: flex;
+        align-items: center;
+        height: 120px;
+    }
+
+    .list-container li {
+        flex-direction: column;
+        margin: 0px 40px;
+
+    }
+
+    .list-container li p {
+        color: #FFF;
+        text-align: center;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+    }
+    .svg-img {
+        display: none;
+    }
+    .stepper {
+        flex-direction: row; /* Switch to row layout */
+        padding: 16px 0; /* Adjust padding */
+        justify-content: space-between; /* Evenly space out steps */
+    }
+
+    .stepper::before {
+        top: auto; /* Reset vertical positioning */
+        left: 20px; /* Start the line from the first step */
+        right: 0; /* End the line at the last step */
+        bottom: 72px; /* Align line to the bottom */
+        width: 100%; /* Full-width horizontal line */
+        height: 2px; /* Make it a horizontal line */
+        /* margin: 0 auto; */
+    }
+
+    .step {
+        position: relative;
+        padding-left: 0; /* Remove left padding */
+        padding-top: 24px; /* Space for the horizontal line */
+        margin-bottom: 0; /* Remove vertical spacing */
+        text-align: center; /* Center-align the content */
+    }
+
+    .step::before {
+        left: 50%; /* Center the indicator */
+        top: auto; /* Reset vertical alignment */
+        bottom: 9px; /* Place the indicator on the horizontal line */
+        transform: translateX(-50%); /* Center horizontally */
+    }
+    .form-one {
+        margin: 10px 0px;
+        padding: 0px 10px;
+    }
+
+    .calendar-card {
+        padding: 40px 10px;
+    }
+
+    .calendar-card h3 {
+        font-size: 16px;
+    }
+
+    .form-two,.form-three {
+        margin: 20px 0px;
+    }
+    .form-two-box,.form-three-box {
+        padding: 20px 5px;
+    }
+    /* form 2 css  */
+    .form-two-box .form-three-box {
+        padding: 20px 5px;
+    }
+    .credit-card{
+        padding:0px;
+    }
+    .btn-group{
+        padding: 10px 5px;
+    }
+}

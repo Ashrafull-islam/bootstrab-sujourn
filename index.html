@@ -92,18 +92,19 @@
                 <div class="offcanvas-body">
                     <div class="">
                         <ul class="m-0 p-0">
-                            <li><a href="/index.html" class="text-black">Home</a></li>
-                            <li><a href="/about.html" class="text-black">About</a></li>
-                            <li><a href="/program.html" class="text-black">Program</a></li>
-                            <li><a href="/contact.html" class="text-black">Contact</a></li>
-                            <li><a class="book-btn books-btn py-2 " href="#">Book now</a></li>
+                            <li><a href="/bootstrab-sujourn/index.html">Home</a></li>
+                            <li><a href="/bootstrab-sujourn/about.html">About</a></li>
+                            <li><a href="/bootstrab-sujourn/program.html">Program</a></li>
+                            <li><a href="/bootstrab-sujourn/contact.html">Contact</a></li>
+                            <li><a class="book-btn books-btn" href="#">Book now</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
+        
     </header>
-    <main>
+    <main class="border">
         <!-- hyphnobirthing container section start  -->
         <section class="hyphnobirthing-section ">
             <div class="bg-container">
@@ -234,6 +235,34 @@
                 <div class="practisioner-padding">
                     <div class="container">
                         <div class="row small-direction">
+                            <!-- Add margin-bottom for spacing between image and content -->
+                            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                                <img src="assets/media/images/practitoner/Col-6.png" alt="practinoner-img"
+                                    loading="lazy" decoding="async" class="w-100">
+                            </div>
+                            <div class="practise-card col-lg-6 col-md-12">
+                                <h3 class="mb-3">Meet Your Practitioner</h3>
+                                <div>
+                                    <p class="my-3">As a mother of four and a Hypnobirthing Australia certified
+                                        practitioner, I've personally witnessed the transformative power of a positive
+                                        birthing experience. My passion is fuelled by a desire to ensure every woman has
+                                        access to the knowledge and support needed for a fulfilling birth, drawing from
+                                        my own diverse experiences across the spectrum of childbirth. </p>
+                                    <p class="mt-4">I leverage my skills and experience to make Hypnobirthing accessible
+                                        to all women, aiming to empower them to understand and embrace the principles of
+                                        the Positive Birth Program.</p>
+                                    <p class="my-3">I believe in the right of every woman to fully experience her body
+                                        and for every baby to enter the world in a calm and gentle manner.</p>
+                                    <p class="mt-5">Your Birth Guide.</p>
+                                    <p class="my-3">Zena Kreidli</p>
+                                </div>
+                                <div class="my-5">
+                                    <a href="#" class="books-btn">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="row small-direction">
                             <div class="col-lg-6 col-md-12">
                                 <img src="assets/media/images/practitoner/Col-6.png" alt="practinoner-img"
                                     loading="lazy" decoding="async">
@@ -258,7 +287,7 @@
                                     <a href="#" class="books-btn">Learn more</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>
@@ -501,24 +530,28 @@
                 <div class="from-body text-center rounded-3">
                     <h2> Book Your Program and <br>
                         Secure Your Spot Today</h2>
-
                     <div class="from-row">
-                        <div class="">
-                            <input type="text" placeholder="Name" class="form-control input-tems">
+                        <div class="form-floating">
+                            <input type="text" placeholder="Name" id="floatingInput" class="form-control input-tems">
+                            <label for="floatingInput">Name</label>
                         </div>
-                        <div class="">
-                            <input type="text" placeholder="Phone number" class="form-control input-tems">
+                        <div class="form-floating">
+                            <input type="text" placeholder="Phone number" id="floatingInput" class="form-control input-tems">
+                            <label for="floatingInput">Phone number</label>
                         </div>
-                        <div class="">
-                            <input type="text" placeholder="Email" class="form-control input-tems">
+                        <div class="form-floating">
+                            <input type="text" placeholder="Email" id="floatingInput" class="form-control input-tems">
+                            <label for="floatingInput">Phone number</label>
                         </div>
                     </div>
                     <div class="from-row2 my-4">
-                        <div class="">
-                            <input type="text" placeholder="Select Program" class="form-control input-tems">
+                        <div class="form-floating">
+                            <input type="text" placeholder="Select Program" id="floatingInput" class="form-control input-tems">
+                            <label for="floatingInput">Phone number</label>
                         </div>
-                        <div class="">
-                            <input type="text" placeholder="Book now" class="form-control input-tems">
+                        <div class="form-floating">
+                            <input type="text" placeholder="Book now" id="floatingInput" class="form-control input-tems">
+                            <label for="floatingInput">Phone number</label>
                         </div>
                     </div>
                 </div>
@@ -539,7 +572,7 @@
                 <img src="assets/media/images/footer-img/image 10.png" alt="carrosol-img" loading="lazy"
                     decoding="async">
             </div>
-            <div class="d-flex d-block d-lg-none">
+            <div class=" d-none">
                 <img src="assets/media/images/footer-img/image.png" alt="carrosol-img" loading="lazy" decoding="async">
                 <img src="assets/media/images/footer-img/image 6.png" alt="carrosol-img" loading="lazy"
                     decoding="async">
@@ -577,7 +610,7 @@
                             and education.</p>
                     </div>
                     <div class="col-lg-4">
-                        <form class="">
+                        <form>
                             <input type="text" class="footer-input" placeholder="E-mail address">
                             <button class="footer-subscribe-btn">Subscribe</button>
                         </form>
@@ -590,7 +623,6 @@
             </div>
         </section>
     </footer>
-    <script src="assets/JS/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

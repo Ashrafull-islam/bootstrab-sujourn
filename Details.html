@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About page</title>
+    <title>program Details</title>
     <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/CSS/about.css">
-    <link rel="stylesheet" href="assets/CSS/common.css">
-    <!-- google fonts  -->
+    <link rel="stylesheet" href="assets/CSS/details.css">
+    <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="assets/CSS/common.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Lexend:wght@100..900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header>
         <!-- tor bar start  -->
-        <section class="top-bar-section d-none d-lg-block">
+        <section class="top-bar-section">
             <div class="container d-flex justify-content-between">
                 <!-- left side  -->
                 <ul class=" left-side d-flex align-items-center m-0 p-0">
@@ -55,7 +57,7 @@
         </section>
 
         <!-- navbar section start  -->
-        <section class="navbar-section">
+        <section class="navbar-section" id="header">
             <div class="container">
                 <div class="content d-flex justify-content-between align-items-center">
                     <!-- left side  -->
@@ -63,11 +65,11 @@
                     <!-- right side  -->
                     <div class="d-lg-block d-none">
                         <ul class="d-flex">
-                            <li><a href="/bootstrab-sujourn/index.html">Home</a></li>
-                            <li><a href="/bootstrab-sujourn/about.html">About</a></li>
-                            <li><a href="/bootstrab-sujourn/program.html">Program</a></li>
-                            <li><a href="/bootstrab-sujourn/contact.html">Contact</a></li>
-                            <li><a class="book-btn books-btn" href="#">Book now</a></li>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/program.html">Program</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                            <li><a class="book-btn books-btn" href="program.html">Book now</a></li>
                         </ul>
                     </div>
                     <div class="d-block d-lg-none">
@@ -90,11 +92,11 @@
                 <div class="offcanvas-body">
                     <div class="">
                         <ul class="m-0 p-0">
-                            <li><a href="/index.html" class="text-black">Home</a></li>
-                            <li><a href="/about.html" class="text-black">About</a></li>
-                            <li><a href="/program.html" class="text-black">Program</a></li>
-                            <li><a href="/contact.html" class="text-black">Contact</a></li>
-                            <li><a class="book-btn books-btn py-2 " href="#">Book now</a></li>
+                            <li><a href="/bootstrab-sujourn/index.html">Home</a></li>
+                            <li><a href="/bootstrab-sujourn/about.html">About</a></li>
+                            <li><a href="/bootstrab-sujourn/program.html">Program</a></li>
+                            <li><a href="/bootstrab-sujourn/contact.html">Contact</a></li>
+                            <li><a class="book-btn books-btn" href="#">Book now</a></li>
                         </ul>
                     </div>
                 </div>
@@ -102,123 +104,195 @@
         </section>
     </header>
     <main>
-        <!-- about container section -->
-         <section class="about-container-section">
-            <div class="banner-img">
-                <div class="container about-text-content">
-                    <h2>About us</h2>
-                    <div class="d-flex align-items-center ">
-                        <div class="d-flex">
-                            <svg  width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.16455 10.9999L10.7779 2.51132C11.2012 2.09518 11.8861 2.09518 12.3084 2.51132L20.9228 10.9999M4.32896 8.8671V18.4648C4.32896 19.0534 4.81379 19.5312 5.41117 19.5312H9.37925V14.9101C9.37925 14.3214 9.86408 13.8437 10.4615 13.8437H12.6259C13.2232 13.8437 13.7081 14.3214 13.7081 14.9101V19.5312H17.6762C18.2735 19.5312 18.7584 19.0534 18.7584 18.4648V8.8671M7.93631 19.5312H15.8725" stroke="black" stroke-width="2.4375" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <p class="ms-1">Home</p>
-                        </div>
-                        <div class="d-flex ms-4">
-                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.23145 1.89062L8.44614 9L1.23145 16.1094" stroke="black" stroke-width="2.4375" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <p class="ms-1">About</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         </section>
-         <!-- card and text sections  -->
-          <section class=" container cards-section">
-            <div class="card-text-content ">
-                <h2>Empowering Mothers, Building Community</h2>
-                <p class="my-3">The Positive Birth Program is a combination of pregnancy/birth education and HypnoBirthing. Most women in the modern world have been led to believe that pregnancy and birth are to be feared, leading the process to become unnecessarily medicalized at certain times.</p>
-            </div>
+        <!-- details section  -->
+        <section>
+            <div class="container">
+                <div class="content row g-3">
 
-            <div class="card-container">
-                <!-- card 1  -->
-                <div class="card-content row align-items-center">
-                    <div class="col col-md-6">
-                       <img src="assets/media/about_images/single-card/IMG_4821 1.png" alt="card-img" loading="lazy" decoding="async">
+                    <!-- lest section  -->
+                    <div class="left-side col-12 col-lg-8">
+                        <div class="">
+                            <div class="left-img">
+                                <img src="assets/media/program-image/card-img/image 29.png" alt="program-details" loading="lazy" decoding="async">
+                            </div>
+                            <div class="text-content">
+                                <h2>1 on 1 Positive Birth Program</h2>
+                                <p>The Positive Birth Program will leave you feeling ready and equipped for your journey
+                                    ahead. It combines pregnancy/childbirth education with HypnoBirthing tools and practices
+                                    to give you a thorough and complete understanding of what you need to birth your baby
+                                    with confidence and positivity. Having other pregnant women in the room to learn and
+                                    practice with, means that you will experience a safe and supportive space, with plenty
+                                    of room for laughter and lots of tears (of joy of course!). Book your spot in TODAY to
+                                    avoid disappointment. </p>
+                                <h3 class="my-5">Program Includes:</h3>
+                                <ul>
+                                    <li class="list-items"><span class="list-bold">You Get the Practitioner to Yourself:
+                                        <p>
+                                        Enjoy the undivided attention of your experienced practitioner throughout the program, allowing for deep dives into your concerns and customisation of your birth preparation.</p>
+                                    </li>
+                                    <li class="list-items"><span class="list-bold">Two 6-Hour Sessions: 
+                                        <p>
+                                        Split over two days, these sessions are packed with interactive learning, allowing ample time for discussion, practice, and personal attention, ensuring you leave feeling confident and prepared.</p>
+                                    </li>
+                                    <li class="list-items"><span class="list-bold">Positive Birth Program Booklet:
+                                        <p>
+                                        A valuable resource provided during the class to complement your learning and serve as a reference for your birthing journey.</p>
+                                    </li>
+                                    </li>
+                                    <li class="list-items"><span class="list-bold">efreshments:
+                                        <p>
+                                        To ensure you remain comfortable and focused throughout our sessions, refreshments will be provided.</p>
+                                    </li>
+                                    </li>
+                                    <li class="list-items"><span class="list-bold">Affirmation Card Pack:
+                                        <p>
+                                        Receive a specially curated pack of affirmation cards, designed to inspire and empower you throughout your pregnancy and birth journey.</p>
+                                    </li>
+                                    </li>
+                                    <li class="list-items"><span class="list-bold">Personalised Essential Oil Blend:
+                                        <p>
+                                        Benefit from a custom-blended essential oil, crafted just for you, to support relaxation and well-being during your birth preparation and beyond.</p>
+                                    </li>
+                                    </li>
+                                    <li class="list-items"><span class="list-bold">App Access: 
+                                        <p>
+                                        Gain exclusive access to the app, featuring additional resources, tracks for relaxation, and practical tools to enhance your preparation for a positive birth experience.</p>
+                                    </li>
+                                    </li>
+                                    <li class="list-items"><span class="list-bold">Support Person Included:
+                                        <p>
+                                        The program fee includes the participation of a support person, recognizing the importance of their role in the birthing process and ensuring they are equally prepared and informed.</p>
+                                    </li>
+                                    </li>
+                                    <li class="list-items"><span class="list-bold">Exclusive Sojourn Products: 
+                                        <p>
+                                        Participants receive special Sojourn products designed to support relaxation and positive birth preparation, enhancing your program experience.</p>
+                                    </li>
+                                    </li>
+                                    <li class="list-items"><span class="list-bold">Ongoing Support from Your Practitioner:
+                                        <p>
+                                        Beyond the classroom, you'll have continuous access to your practitioner for guidance, ensuring you feel supported every step of the way.</p>
+                                    </li>
+                                    </li>
+                                    <li class="list-items"><span class="list-bold">Extra Small Goodies:
+                                        <p>
+                                        Delight in a selection of carefully chosen extras that make a significant impact on your comfort and readiness for motherhood.</p>
+                                    </li>
+                                    </li>
+                                    <li class="list-items"><span class="list-bold">One-of-a-Kind Experience:
+                                        <p>
+                                        This program is not just about preparation; it's an exclusive journey tailored to celebrate and empower your unique path to motherhood.</p>
+                                    </li>
+                                </ul>
+                                <P>Embark on your journey to parenthood with Sojourn's Positive Birth Program, where we dedicate ourselves to making your birth experience as positive and empowering as possible.</P>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-text col-12 col-md-6">
-                        <h2>Our Mission: A Sanctuary for Mothers</h2>
-                        <p>Sojourn's mission transcends traditional birthing education, aiming to be a sanctuary for mothers at any stage of their journey. From the transformative experience of hypnobirthing to the challenges and joys of early parenting, Our goal is to ensure no mother feels forgotten or held back, offering a space where support, networking, and child minding blend seamlessly.</p>
-                    </div>
-                </div>
-                <!-- card 2  -->
-                <div class="card-content row flex-row-reverse align-items-center my-5">
-                    <div class="col col-md-6">
-                       <img src="assets/media/about_images/single-card/IMG_4817 1.png" alt="card-img" loading="lazy" decoding="async">
-                    </div>
-                    <div class="card-text col-12 col-md-6">
-                        <h2>A Mother's Insight</h2>
-                        <p>Zena, a mother of four and a HypnoBirthing Australia certified practitioner, brings her personal journey and professional expertise to Sojourn. With a rich background in social sciences and as a NAATI accredited Arabic interpreter, Zena's approach is both inclusive and empowering.</p>
-                    </div>
-                </div>
-                <!-- card 3 -->
-                <div class="card-content row align-items-center">
-                    <div class="col col-md-6">
-                       <img src="assets/media/about_images/single-card/IMG_4891 2.png" alt="card-img" loading="lazy" decoding="async">
-                    </div>
-                    <div class="card-text col-12 col-md-6">
-                        <h2>With You at Every Step of Motherhood</h2>
-                        <p>Sojourn's mission transcends traditional birthing education, aiming to be a sanctuary for mothers at any stage of their journey. From the transformative experience of hypnobirthing to the challenges and joys of early parenting, Our goal is to ensure no mother feels forgotten or held back, offering a space where support, networking, and child minding blend seamlessly.</p>
-                    </div>
-                </div>
-                <!-- card 4 -->
-                <div class="card-content row flex-row-reverse align-items-center my-5">
-                    <div class="col col-md-6">
-                       <img src="assets/media/about_images/single-card/IMG_4864 1.png" alt="card-img" loading="lazy" decoding="async">
-                    </div>
-                    <div class="card-text col-12 col-md-6">
-                        <h2>What to expect from our programs</h2>
-                        <p>Zena, a mother of four and a HypnoBirthing Australia certified practitioner, brings her personal journey and professional expertise to Sojourn. With a rich background in social sciences and as a NAATI accredited Arabic interpreter, Zena's approach is both inclusive and empowering.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- single card container  -->
-            <div class="single-card-container">
-                <h2>Path to Parenthood Resources</h2> 
-                <!-- single card 1 -->
-                <div class="single-card-container row">
+                    <!-- right section  -->
                     <div class="col-12 col-md-4">
-                    <div class="single-card-content">
-                        <img src="assets/media/about_images/card/image (1).png" alt="card-img" loading="lazy" decoding="async">
-                        <div class="p-3">
-                            <p class="birth-text">Birth stories</p>
-                            <h3 class="birth-header">Celebrating Little Miracles</h3>
-                            <p class="miracles-text">Every birth is a testament to the miracles that unfold within our walls. Whether it's the joyous arrival of a tiny explorer born in the comfort of a home</p>
-                            <p class="date-ob">22-04-2023</p>
-                        </div>
-                       
-                    </div> 
-                    </div>
-                    <!-- single card 2  -->
-                    <div class="col-12 my-5 my-md-0 col-md-4">
-                        <div class="single-card-content">
-                            <img src="assets/media/about_images/card/image 18.png" alt="card-img" loading="lazy" decoding="async">
-                            <div class="p-3">
-                                <p class="birth-text">Birth stories</p>
-                                <h3 class="birth-header">Celebrating Little Miracles</h3>
-                                <p class="miracles-text">Every birth is a testament to the miracles that unfold within our walls. Whether it's the joyous arrival of a tiny explorer born in the comfort of a home</p>
-                                <p class="date-ob">22-04-2023</p>
-                            </div>
-                           
-                        </div> 
-                        </div>
-                        <!-- single card 3 -->
-                        <div class="col-12 col-md-4">
-                            <div class="single-card-content">
-                                <img src="assets/media/about_images/card/image (3).png" alt="card-img" loading="lazy" decoding="async">
-                                <div class="p-3">
-                                    <p class="birth-text">Birth stories</p>
-                                    <h3 class="birth-header">Celebrating Little Miracles</h3>
-                                    <p class="miracles-text">Every birth is a testament to the miracles that unfold within our walls. Whether it's the joyous arrival of a tiny explorer born in the comfort of a home</p>
-                                    <p class="date-ob">22-04-2023</p>
+                            <!-- Session Details Card -->
+                            <div class="info-card ">
+                                <div class="session-detail my-3">
+                                    <span>Next Session</span>
+                                    <span>20 Oct, 2024</span>
                                 </div>
-                               
-                            </div> 
+                                <div class="session-detail my-3">
+                                    <span>Start time</span>
+                                    <span>10:00 AM</span>
+                                </div>
+                                <div class="session-detail my-3">
+                                    <span>Location</span>
+                                    <span>Docklands, Melbourne</span>
+                                </div>
+                                <div class="session-detail my-3">
+                                    <span>Price</span>
+                                    <span>$1250</span>
+                                </div>
+                                <div class="bg-color">
+                                <a href="#" class="social-link">
+                                    Follow us on Instagram
+                                </a>
+            
+                                <div class="text-center">
+                                    <small>Want to know more details? <a href="#" class="text-decoration-none">Contact Us</a></small>
+                                </div>
+            
+                                <!-- <button class="btn btn-book my-5">Book Now</button> -->
+                                <div class="container my-5">
+                                    <!-- Button to Open Modal -->
+                                    <button type="button" class="btn-book btn" data-bs-toggle="modal" data-bs-target="#pageModal">
+                                        Book Now
+                                    </button>
+                                </div>
+                                <!-- modal  -->
+                                <div class="modal fade" id="pageModal" tabindex="-1" aria-labelledby="pageModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                                        <div class="modal-content border-success">
+                                            <div class="modal-body p-0 border-success">
+                                                <iframe src="/multisteps.html" style="width: 100%; height: 90vh; border: none;"></iframe>
+                                            </div>
+                                            <!-- <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
+                            </div>
+            
+                            <!-- Gift Card Section -->
+                            <div class="info-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="50" viewBox="0 0 48 50" fill="none">
+                                    <g clip-path="url(#clip0_1_800)">
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M20.2926 12.0827H11.7514C11.2198 11.3438 10.8932 10.4659 10.8077 9.54545C10.7294 8.63316 10.944 7.99884 11.2813 7.6104C11.5913 7.25048 12.3579 6.69455 14.2146 6.69455C15.9079 6.69455 17.6488 7.90618 19.1274 10.0444C19.5942 10.7214 19.9792 11.4199 20.2926 12.0827ZM5.71437 10.0158C5.7757 10.7143 5.90857 11.4092 6.10617 12.0827H4.08246C3.17889 12.0827 2.31232 12.4582 1.6734 13.1265C1.03448 13.7948 0.675537 14.7012 0.675537 15.6464V18.7895C0.675537 19.7346 1.03448 20.641 1.6734 21.3093C2.31232 21.9776 3.17889 22.3531 4.08246 22.3531H43.6164C44.5199 22.3531 45.3865 21.9776 46.0254 21.3093C46.6644 20.641 47.0233 19.7346 47.0233 18.7895V15.6464C47.0233 14.7012 46.6644 13.7948 46.0254 13.1265C45.3865 12.4582 44.5199 12.0827 43.6164 12.0827H41.5927C41.7903 11.4092 41.9231 10.7143 41.9845 10.0158C42.148 8.04873 41.7392 5.80365 40.2129 4.02896C38.6627 2.23646 36.329 1.35268 33.4842 1.35268C29.3959 1.35268 26.3194 4.17507 24.4252 6.92619C24.2252 7.21735 24.0332 7.51444 23.8494 7.81709C23.6645 7.5144 23.4714 7.21731 23.2702 6.92619C21.3828 4.16794 18.3029 1.34912 14.218 1.34912C11.3699 1.34912 9.03953 2.2329 7.48938 4.03253C5.95967 5.80365 5.55425 8.04873 5.71778 10.0194L5.71437 10.0158ZM27.4062 12.0827H35.9474C36.4808 11.3449 36.8075 10.4664 36.8911 9.54545C36.9695 8.63316 36.7548 7.99884 36.4175 7.6104C36.1075 7.25048 35.341 6.69455 33.4842 6.69455C31.791 6.69455 30.05 7.90618 28.5714 10.0444C28.1047 10.7214 27.7197 11.4199 27.4062 12.0827ZM4.08246 26.8076H21.7201V49.3725H7.33948C6.4359 49.3725 5.56934 48.997 4.93042 48.3287C4.2915 47.6604 3.93255 46.754 3.93255 45.8088V26.8076H4.08246ZM40.3594 49.3725H25.9787V26.8076H43.7663V45.8088C43.7663 46.754 43.4073 47.6604 42.7684 48.3287C42.1295 48.997 41.2629 49.3725 40.3594 49.3725Z" fill="#263B3C"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_1_800">
+                                        <rect width="47.6969" height="49.8907" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                <h3 class="h5 mb-4 my-3">Empower a Loved One</h3>
+                                <p class="small mb-4">Surprise someone special with our Positive Birth Program. Gifting a secure and confident journey into motherhood. Contact us for a gift certificate.</p>
+                                
+                                <form class="gift-form">
+                                    <div class="mb-3">
+                                        <label>To</label>
+                                        <div class="form-floating">
+                                        <input type="text"  class="form-control" id="floatingInput" placeholder="Recipient Name">
+                                        <label for="floatingInput">Recipient Name</label>
+                                        </div>
+                                        <div class="form-floating">
+                                        <input type="email"  class="form-control" id="floatingInput" placeholder="Recipient Email">
+                                        <label for="floatingInput">Recipient Email</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="mb-3">
+                                        <label>From</label>
+                                        <div class="form-floating">
+                                        <input type="text"  class="form-control" id="floatingInput" placeholder="Sender Name">
+                                        <label for="floatingInput">Sender Name</label>
+                                        </div>
+                                        <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="Sender Email">
+                                        <label for="floatingInput">Sender Email</label>
+                                        </div>
+                                    </div>
+            
+                                    <div class="mb-3">
+                                        <label>Note</label>
+                                        <textarea placeholder="Write a note to your recipient..."></textarea>
+                                    </div>
+            
+                                    <button class="btn btn-book">Buy Now</button>
+                                </form>
+                            </div>
+                    </div>
                 </div>
             </div>
-          </section>
+        </section>
     </main>
     <footer>
         <!-- carosol section  -->
@@ -286,5 +360,7 @@
         </section>
     </footer>
     <script src="assets/JS/bootstrap.bundle.min.js"></script>
+    <script src="assets/JS/commonnavbar.js"></script>
 </body>
+
 </html>

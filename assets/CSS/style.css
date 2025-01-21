@@ -25,17 +25,18 @@ header {
 
     /* tor bar css end  */
     /* navbar css start  */
-    .navbar-section {
-        padding: 18px 0;
-        width: 100%;
-        left: 0;
-        position: sticky;
-        z-index: 1000;
-        top: 0;
-        background-color: aliceblue;
-        border: 1px solid rgb(228, 223, 223);
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-            rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+.navbar-section {
+    padding: 13px 0;
+    width: 100%;
+    left: 0;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: aliceblue;
+    border: 1px solid rgb(228, 223, 223);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+                rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
 
         .content {
             img {
@@ -49,7 +50,7 @@ header {
                 margin-left: 40px;
 
                 .book-btn {
-                    padding: 18px 40px;
+                    padding: 20px 53px;
                     font-size: 20px;
                     color: #FFFFFF;
                 }
@@ -65,7 +66,6 @@ header {
     }
 
 
-}
 
 
 
@@ -198,8 +198,7 @@ main {
 
                 .accordion-item {
                     margin-top: 15px;
-
-                    /* border-radius: 16px; */
+                    border-radius: 16px;
                     .accordion-header {
                         border: 1px solid rgb(248, 248, 248);
                         background: #F7FAFA;
@@ -213,15 +212,22 @@ main {
                             line-height: 160%;
                             border-radius: 16px;
                             border: none;
-
+                            
                             &.collapsed {
                                 background-color: #F7FAFA;
+                                &::after {
+                                    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+                                 }
                             }
 
                             &:not(.collapsed) {
                                 background-color: #263B3C;
                                 color: #F7FAFA;
                                 border-radius: 0;
+                                &::after {
+                                    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+
+                                 }
 
                             }
                         }
@@ -274,7 +280,7 @@ main {
     .form-section {
         background-color: #E5EEEE;
         position: relative;
-        bottom: 100px;
+        bottom: 120px;
 
         .from-body {
             padding: 56px 113px;
@@ -373,6 +379,41 @@ footer {
         }
     }
 }
+@media  only screen and (max-width:1399px) {
+    .hyphnobirthing-section {
+        .bg-container {
+            .sub-text {
+                height: auto !important;
+                width: 100% !important;
+                top: 40px !important;
+                left: 0px !important;
+                right: 0px !important;
+                padding: 10px 50px !important;
+            }
+        }
+    }
+    .footer-subscribe-btn {
+        left: 195px !important;
+    }
+    
+}
+@media only screen and (max-width:1024px){
+
+    .hyphnobirthing-section {
+        .bg-container {
+            .sub-text {
+                height: auto !important;
+                width: 100% !important;
+                top: 40px !important;
+                left: 0px !important;
+                right: 0px !important;
+            }
+        }
+    }
+    .footer-subscribe-btn {
+        left: 135px !important;
+    }
+}
 
 /* responsive for movile device css */
 @media only screen and (max-width: 991px) {
@@ -390,8 +431,8 @@ footer {
                 ul {
                     li {
                         a {
-                                margin-bottom: 20px;
-                                text-align: center;
+                            margin-bottom: 20px;
+                            text-align: center;
 
                         }
                     }
@@ -415,10 +456,11 @@ footer {
             .bg-container {
                 .sub-text {
                     height: auto !important;
-                    width: auto !important;
+                    width: 100% !important;
                     top: 40px !important;
-                    left: 20px !important;
-                    right: 20px !important;
+                    left: 0px !important;
+                    right: 0px !important;
+                    padding: 10px 100px !important;
                 }
             }
         }
@@ -426,6 +468,7 @@ footer {
         .hyphnobirthing-section {
             .bg-container {
                 .sub-text {
+
                     h2 {
                         font-size: 30px !important;
                         line-height: 32px !important;
@@ -514,17 +557,47 @@ footer {
             display: none;
         }
     }
+
     /* footer section css start  */
-    footer {
-        .marque-section {
-            img {
-                height: 170px;
-                width: 100%;
-            }
-        }
+    
 
         .main-footer-section {
             padding: 40px 10px;
         }
+
+        .footer-subscribe-btn {
+            left: 535px !important;
+        }
+}
+
+@media only screen and (max-width:800px){
+    .footer-subscribe-btn {
+        left: 210px !important;
+    }
+}
+@media only screen and (max-width:768px) {
+    .footer-subscribe-btn{
+        left: 500px !important;
+    }
+}
+@media only screen and (max-width:540px) {
+    .footer-subscribe-btn{
+        left: 350px !important;
+    }
+}
+@media only screen and (max-width:412px) {
+    
+        .bg-container {
+            .sub-text {
+                padding:0px !important;
+            }
+        }
+    .footer-subscribe-btn{
+        left: 220px !important;
+    }
+}
+@media only screen and (max-width:375px){
+    .footer-subscribe-btn {
+        left: 190px !important;
     }
 }
