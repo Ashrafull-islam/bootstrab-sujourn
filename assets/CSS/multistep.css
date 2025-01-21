@@ -328,18 +328,35 @@ form {
 }
 
 .btn-group .btn-next {
-    color: white;
-    padding: 12px 30px 9px 35px;
-    font-weight: 600;
-    align-items: center;
-    border-radius: 17.612px;
+    border-radius: 66.054px;
+    border: 1px solid #FFF;
     background: #263B3C;
+    padding: 10px 30px;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 120%;
+}
+.btn-closesc{
+    border-radius: 66.054px;
+    border: 1px solid #FFF;
+    background: #263B3C;
+    padding: 10px 25px;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 120%;
 }
 
 .btn-group .btn-back {
-    padding: 12px 30px 9px 35px;
-    background: white;
-    border-radius: 17.612px;
+    border-radius: 66.054px;
+    border: 1px solid #FFF;
+    background-color: #263B3C;
+    padding: 10px 25px;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 120%;
 }
 
 .credit-card {

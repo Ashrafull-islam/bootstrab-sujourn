@@ -5,7 +5,7 @@ const steps = document.querySelectorAll('.list-container li');
 const formPages = document.querySelectorAll('.form-step'); 
 const leftSide = document.querySelector('.left-side');
 const allBtn = document.querySelector('.btn-group');
-const closeBtn=document.querySelector('.btn-close');
+const closeBtn=document.querySelector('.btn-closesc');
 console.log(nextButton, backButton, steps, formPages,allBtn,closeBtn);
 
 // Current step tracker
@@ -22,6 +22,9 @@ function updateUI() {
             if (currentStep === 1) {
                 backButton.style.display = "none";
                 closeBtn.style.display="blcok"
+            }
+            else if(index===3){
+                nextButton.style.display="none";
             }
             else {
                 backButton.style.display = "block";
