@@ -1,72 +1,84 @@
-// Select the buttons and elements
-const nextButton = document.querySelector('.btn-next');
-const backButton = document.querySelector('.btn-back');
-const steps = document.querySelectorAll('.list-container li'); 
-const formPages = document.querySelectorAll('.form-step'); 
-const leftSide = document.querySelector('.left-side');
-const allBtn = document.querySelector('.btn-group');
-const closeBtn=document.querySelector('.btn-closesc');
-console.log(nextButton, backButton, steps, formPages,allBtn,closeBtn);
+document.addEventListener("DOMContentLoaded", function () {
+    // Element Selectors
+    const steps = document.querySelectorAll('.list-container li');
+    const formPages = document.querySelectorAll('.form-step');
+    const closeBtn = document.querySelector('.btn-closesc');
+    const nextButton = document.querySelector('.btn-next');
+    const backButton = document.querySelector('.btn-back');
 
-// Current step tracker
-let currentStep = 1;
+    // Current Step Tracker
+    let currentStep = 1;
 
+    // Function to Validate the Current Step
+    function validateCurrentStep() {
+        const currentForm = formPages[currentStep - 1]; // Get the current form step
+        const inputs = currentForm.querySelectorAll('input[required]');
+        let isValid = true;
 
-function updateUI() {
-    // Loop through all steps and form pages
-    steps.forEach((step, index) => {
-        console.log(index);
-        if (index === currentStep - 1) {
-            step.classList.add('active');
-            formPages[index].style.display = 'block';
+        inputs.forEach(input => {
+            const errorSpan = input.nextElementSibling;
+            // Clear previous errors
+            input.classList.remove('is-invalid');
+            if (errorSpan) errorSpan.textContent = "";
+
+            if (input.value.trim() === "") {
+                isValid = false;
+                input.classList.add('is-invalid'); // Highlight invalid input
+                if (errorSpan) {
+                    errorSpan.textContent = "This field is required.";
+                } else {
+                    const span = document.createElement('span');
+                    span.classList.add('error-message');
+                    span.textContent = "This field is required.";
+                    span.style.color="red";
+                    input.parentNode.appendChild(span);
+                }
+            }
+        });
+
+        return isValid;
+    }
+
+    // Function to Update UI
+    function updateUI() {
+        steps.forEach((step, index) => {
+            const isActive = index === currentStep - 1;
+
+            // Toggle Active Class and Visibility
+            step.classList.toggle('active', isActive);
+            formPages[index].style.display = isActive ? 'block' : 'none';
+
+            // Handle Button Visibility
             if (currentStep === 1) {
-                backButton.style.display = "none";
-                closeBtn.style.display="blcok"
+                backButton.style.display = 'none';
+                closeBtn.style.display = 'block';
+            } else if (currentStep === steps.length) {
+                nextButton.style.display = 'none';
+                closeBtn.style.display = 'none';
+            } else {
+                backButton.style.display = 'block';
+                nextButton.style.display = 'block';
+                closeBtn.style.display = 'none';
             }
-            else if(index===3){
-                nextButton.style.display="none";
-            }
-            else {
-                backButton.style.display = "block";
-                closeBtn.style.display = "none";
-            }
-          
-        } 
-        else {
-            step.classList.remove('active');
-            formPages[index].style.display = 'none';
+        });
+    }
+
+    // Event Listener for Next Button
+    nextButton?.addEventListener('click', () => {
+        if (validateCurrentStep() && currentStep < steps.length) {
+            currentStep++;
+            updateUI();
         }
     });
-}
 
-// Event listener for Next Button
-nextButton.addEventListener('click', () => {
-    if (currentStep < steps.length) {
-        ++currentStep;
-        updateUI();
-    }
+    // Event Listener for Back Button
+    backButton?.addEventListener('click', () => {
+        if (currentStep > 1) {
+            currentStep--;
+            updateUI();
+        }
+    });
+
+    // Initialize UI
+    // updateUI();
 });
-
-// Event listener for Back Button
-backButton.addEventListener('click', () => {
-    if (currentStep > 1) {
-        --currentStep;
-        updateUI();
-    }
-});
-
-updateUI();
-
-//close btn
-// document.addEventListener("DOMContentLoaded", function () {
-//     const closeModalBtn = document.getElementById("closeModalBtn");
-//     const modalElement = new bootstrap.Modal(document.getElementById("myModal"));
-
-//     closeModalBtn.addEventListener("click", function () {
-//         modalElement.hide(); 
-//     });
-// });
-function closeModal() {
-    const modalElement = new bootstrap.Modal(document.getElementById("myModal"));
-    modalElement.hide(); // Hide the modal
-}
