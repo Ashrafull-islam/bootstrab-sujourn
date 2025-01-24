@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Lexend:wght@100..900&display=swap"
         rel="stylesheet">
+            <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -222,23 +224,45 @@
     </main>
     <footer>
         <!-- carosol section  -->
-        <section class="marque-section ">
-            <div class="d-none d-lg-flex flex-nowrap align-items-stretch">
-                <img src="assets/media/images/footer-img/image.png" alt="carrosol-img" loading="lazy" decoding="async">
-                <img src="assets/media/images/footer-img/image 6.png" alt="carrosol-img" loading="lazy"
-                    decoding="async">
-                <img src="assets/media/images/footer-img/image 7.png" alt="carrosol-img" loading="lazy"
-                    decoding="async">
-                <img src="assets/media/images/footer-img/image 8.png" alt="carrosol-img" loading="lazy"
-                    decoding="async">
-                <img src="assets/media/images/footer-img/image 10.png" alt="carrosol-img" loading="lazy"
-                    decoding="async">
-            </div>
-            <div class="d-flex d-block d-lg-none">
-                <img src="assets/media/images/footer-img/image.png" alt="carrosol-img" loading="lazy" decoding="async">
-                <img src="assets/media/images/footer-img/image 6.png" alt="carrosol-img" loading="lazy"
-                    decoding="async">
-            </div>
+        
+        <section class="marque-section d-none d-lg-block">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/media/images/footer-img/image.png" alt="carrosol-img" loading="lazy"
+                            decoding="async" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/media/images/footer-img/image 6.png" alt="carrosol-img" loading="lazy"
+                            decoding="async" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/media/images/footer-img/image 7.png" alt="carrosol-img" loading="lazy"
+                            decoding="async" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/media/images/footer-img/image 8.png" alt="carrosol-img" loading="lazy"
+                            decoding="async" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/media/images/footer-img/image 10.png" alt="carrosol-img" loading="lazy"
+                            decoding="async" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/media/images/footer-img/image.png" alt="carrosol-img" loading="lazy"
+                            decoding="async" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/media/images/footer-img/image 6.png" alt="carrosol-img" loading="lazy"
+                            decoding="async" />
+                    </div>
+                </div>
+                <div class=" d-none">
+                    <img src="assets/media/images/footer-img/image.png" alt="carrosol-img" loading="lazy"
+                        decoding="async">
+                    <img src="assets/media/images/footer-img/image 6.png" alt="carrosol-img" loading="lazy"
+                        decoding="async">
+                </div>
         </section>
         <!-- main footer section  -->
         <section class="main-footer-section">
@@ -286,6 +310,7 @@
         </section>
     </footer>
     <script src="assets/JS/bootstrap.bundle.min.js"></script>
-    <script src="assets/JS/commonnavbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/JS/details.js"></script>
 </body>
 </html>

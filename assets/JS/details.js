@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 } else {
                     const span = document.createElement('span');
                     span.classList.add('error-message');
-                    span.textContent = "This field is required.";
+                    span.innerText = "This field is required.";
                     span.style.color="red";
                     input.parentNode.appendChild(span);
                 }
@@ -82,3 +82,38 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initialize UI
     // updateUI();
 });
+// navbar scroll bar function
+document.addEventListener("scroll", function () {
+    const header = document.getElementById("header");
+    console.log(header)
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+});
+// swiper slider js 
+var swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  direction: getDirection(),
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 10000, // 3 seconds delay between slides
+    disableOnInteraction: false, // Keep autoplay running even after user interaction
+  },
+  on: {
+    resize: function () {
+      swiper.changeDirection(getDirection());
+    },
+  },
+});
+
+function getDirection() {
+  var windowWidth = window.innerWidth;
+  var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+
+  return direction;
+}

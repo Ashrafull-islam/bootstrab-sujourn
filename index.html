@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Lexend:wght@100..900&display=swap"
         rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -260,7 +262,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- <div class="row small-direction">
                             <div class="col-lg-6 col-md-12">
                                 <img src="assets/media/images/practitoner/Col-6.png" alt="practinoner-img"
@@ -535,7 +537,8 @@
                             <label for="floatingInput">Name</label>
                         </div>
                         <div class="form-floating">
-                            <input type="text" placeholder="Phone number" id="floatingInput" class="form-control input-tems">
+                            <input type="text" placeholder="Phone number" id="floatingInput"
+                                class="form-control input-tems">
                             <label for="floatingInput">Phone number</label>
                         </div>
                         <div class="form-floating">
@@ -545,11 +548,13 @@
                     </div>
                     <div class="from-row2 my-4">
                         <div class="form-floating">
-                            <input type="text" placeholder="Select Program" id="floatingInput" class="form-control input-tems">
+                            <input type="text" placeholder="Select Program" id="floatingInput"
+                                class="form-control input-tems">
                             <label for="floatingInput">Phone number</label>
                         </div>
                         <div class="form-floating">
-                            <input type="text" placeholder="Book now" id="floatingInput" class="form-control input-tems">
+                            <input type="text" placeholder="Book now" id="floatingInput"
+                                class="form-control input-tems">
                             <label for="floatingInput">Phone number</label>
                         </div>
                     </div>
@@ -559,24 +564,45 @@
     </main>
     <footer>
         <!-- carosol section  -->
-         
-        <section class="marque-section ">
-            <div class="d-none d-lg-flex flex-nowrap align-items-stretch">
-                <img src="assets/media/images/footer-img/image.png" alt="carrosol-img" loading="lazy" decoding="async">
-                <img src="assets/media/images/footer-img/image 6.png" alt="carrosol-img" loading="lazy"
-                    decoding="async">
-                <img src="assets/media/images/footer-img/image 7.png" alt="carrosol-img" loading="lazy"
-                    decoding="async">
-                <img src="assets/media/images/footer-img/image 8.png" alt="carrosol-img" loading="lazy"
-                    decoding="async">
-                <img src="assets/media/images/footer-img/image 10.png" alt="carrosol-img" loading="lazy"
-                    decoding="async">
-            </div>
-            <div class=" d-none">
-                <img src="assets/media/images/footer-img/image.png" alt="carrosol-img" loading="lazy" decoding="async">
-                <img src="assets/media/images/footer-img/image 6.png" alt="carrosol-img" loading="lazy"
-                    decoding="async">
-            </div>
+
+        <section class="marque-section d-none d-lg-block">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/media/images/footer-img/image.png" alt="carrosol-img" loading="lazy"
+                            decoding="async" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/media/images/footer-img/image 6.png" alt="carrosol-img" loading="lazy"
+                            decoding="async" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/media/images/footer-img/image 7.png" alt="carrosol-img" loading="lazy"
+                            decoding="async" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/media/images/footer-img/image 8.png" alt="carrosol-img" loading="lazy"
+                            decoding="async" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/media/images/footer-img/image 10.png" alt="carrosol-img" loading="lazy"
+                            decoding="async" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/media/images/footer-img/image.png" alt="carrosol-img" loading="lazy"
+                            decoding="async" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/media/images/footer-img/image 6.png" alt="carrosol-img" loading="lazy"
+                            decoding="async" />
+                    </div>
+                </div>
+                <div class=" d-none">
+                    <img src="assets/media/images/footer-img/image.png" alt="carrosol-img" loading="lazy"
+                        decoding="async">
+                    <img src="assets/media/images/footer-img/image 6.png" alt="carrosol-img" loading="lazy"
+                        decoding="async">
+                </div>
         </section>
         <!-- main footer section  -->
         <section class="main-footer-section">
@@ -624,7 +650,8 @@
         </section>
     </footer>
     <script src="assets/JS/bootstrap.bundle.min.js"></script>
-    <script src="assets/JS/commonnavbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/JS/details.js"></script>
 </body>
 
 </html>
