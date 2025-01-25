@@ -225,7 +225,9 @@
                                     </button>
                                 </div>
                                 <!-- modal  -->
-                                <div class="modal fade" id="pageModal" tabindex="-1" aria-labelledby="pageModalLabel" aria-hidden="true">
+                                <!-- <div class="modal fade" id="pageModal" tabindex="-1" aria-labelledby="pageModalLabel" aria-hidden="true"> -->
+                                    <div class="modal fade" id="pageModal" tabindex="-1" aria-labelledby="pageModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+
                                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
                                         <div class="modal-content">
                                             <div class="modal-body p-0">
@@ -1036,34 +1038,35 @@
                                                                     </div>
                                                                 </div>
                                                                 <!-- btn section  -->
-                                                                <div class="btn-group container d-flex justify-content-between">
-                                                                    <div class="modal-footer" id="myModal">
-                                                                        <button type="button" class="btn-closesc position-absolute bottom-0 start-0" data-bs-dismiss="modal" id="closeModalBtn" onclick="closeModal()">Close</button>
+                                                                 <div class="padding-group">
+                                                                    <div class="btn-group container d-flex justify-content-around">
+                                                                        <div class="modal-footer" id="myModal">
+                                                                            <button type="button" class="btn-closesc position-absolute bottom-0 start-0" data-bs-dismiss="modal" id="closeModalBtn" onclick="closeModal()">Close</button>
+                                                                        </div>
+                                                
+                                                                        <button class="btn-back position-absolute bottom-0 start-0">
+                                                                            <span>
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                                    <path
+                                                                                      d="M12.5005 2.99976L7.49902 8.00126L12.5005 13.0028M8.49929 2.99976L3.4978 8.00126L8.49929 13.0028"
+                                                                                      stroke="white" stroke-width="0.313003" stroke-linecap="round" stroke-linejoin="round" />
+                                                                                  </svg>
+                                                                            </span>
+                                                                            Back</button>
+                                                                        <button class="btn-next position-absolute bottom-0 end-0">Next Step
+                                                                            <span>
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                                                                    fill="none">
+                                                                                    <path
+                                                                                        d="M3.49951 2.99976L8.50101 8.00126L3.49951 13.0028M7.50071 2.99976L12.5022 8.00126L7.50071 13.0028"
+                                                                                        stroke="white" stroke-width="0.313003" stroke-linecap="round"
+                                                                                        stroke-linejoin="round" />
+                                                                                </svg>
+                                                                            </span>
+                                                                        </button>
                                                                     </div>
-                                            
-                                                                    <button class="btn-back position-absolute bottom-0 start-0">
-                                                                        <span>
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                                                                fill="none">
-                                                                                <path
-                                                                                    d="M3.49951 2.99976L8.50101 8.00126L3.49951 13.0028M7.50071 2.99976L12.5022 8.00126L7.50071 13.0028"
-                                                                                    stroke="white" stroke-width="0.313003" stroke-linecap="round"
-                                                                                    stroke-linejoin="round" />
-                                                                            </svg>
-                                                                        </span>
-                                                                        Back</button>
-                                                                    <button class="btn-next position-absolute bottom-0 end-0">Next Step
-                                                                        <span>
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                                                                fill="none">
-                                                                                <path
-                                                                                    d="M3.49951 2.99976L8.50101 8.00126L3.49951 13.0028M7.50071 2.99976L12.5022 8.00126L7.50071 13.0028"
-                                                                                    stroke="white" stroke-width="0.313003" stroke-linecap="round"
-                                                                                    stroke-linejoin="round" />
-                                                                            </svg>
-                                                                        </span>
-                                                                    </button>
-                                                                </div>
+                                                                 </div>
+                                                                
                                                             </form>
                                                         </div>
                                                     </div>
@@ -1198,7 +1201,6 @@
         </section>
     </footer>
     <script src="assets/JS/bootstrap.bundle.min.js"></script>
-    <script src="assets/JS/commonnavbar.js"></script>
     <script src="assets/JS/details.js"></script>
 </body>
 
