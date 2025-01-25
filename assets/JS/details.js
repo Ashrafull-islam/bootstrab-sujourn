@@ -93,27 +93,41 @@ document.addEventListener("scroll", function () {
       }
 });
 // swiper slider js 
-var swiper = new Swiper(".swiper", {
-  slidesPerView: 3,
-  direction: getDirection(),
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  autoplay: {
-    delay: 10000, // 3 seconds delay between slides
-    disableOnInteraction: false, // Keep autoplay running even after user interaction
-  },
-  on: {
-    resize: function () {
-      swiper.changeDirection(getDirection());
+// var swiper = new Swiper(".swiper", {
+//   slidesPerView: 3,
+//   direction: getDirection(),
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   autoplay: {
+//     delay: 1000, // 3 seconds delay between slides
+//     disableOnInteraction: false, // Keep autoplay running even after user interaction
+//   },
+//   on: {
+//     resize: function () {
+//       swiper.changeDirection(getDirection());
+//     },
+//   },
+// });
+
+// function getDirection() {
+//   var windowWidth = window.innerWidth;
+//   var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+
+//   return direction;
+// }
+
+var swiper = new Swiper(".swiper.footer-slider", {
+    slidesPerView: 1,
+    loop:true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-  },
-});
-
-function getDirection() {
-  var windowWidth = window.innerWidth;
-  var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
-
-  return direction;
-}
+    autoplay: {
+      delay: 1000, // 3 seconds delay between slides
+      disableOnInteraction: false, // Keep autoplay running even after user interaction
+    },
+  });
+  
